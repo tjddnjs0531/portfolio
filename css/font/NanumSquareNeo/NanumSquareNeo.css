@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 300;
+    font-style: normal;
+    src: url('NanumSquareNeo-aLt.woff') format('woff'),
+         url('NanumSquareNeo-aLt.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 400;
+    font-style: normal;
+    src: url('NanumSquareNeo-bRg.woff') format('woff'),
+         url('NanumSquareNeo-bRg.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 600;
+    font-style: normal;
+    src: url('NanumSquareNeo-cBd.woff') format('woff'),
+         url('NanumSquareNeo-cBd.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 700;
+    font-style: normal;
+    src: url('NanumSquareNeo-dEb.woff') format('woff'),
+         url('NanumSquareNeo-dEb.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 900;
+    font-style: normal;
+    src: url('NanumSquareNeo-eHv.woff') format('woff'),
+         url('NanumSquareNeo-eHv.woff2') format('woff2');
+    font-display: swap;
+}
