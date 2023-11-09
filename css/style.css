@@ -46,7 +46,7 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .fade-g > *{opacity:0; transform: translateY(1.35rem); transition: all cubic-bezier(.215,.61,.355,1) .85s;; transition-delay: .1s;}
 .fade-g.on > *.on{transform: translateY(0); opacity: 1;}
 
-#section3{width: 100%; height: 1000vh; z-index: 100;}
+#section3{width: 100%; height: 1400vh; z-index: 100;}
 #section3 .in{width: 700%; height: 100vh; margin-left: 5%; position: fixed; left: 0; top: 200px;}
 .project-wrap{width: 700%;height: 100vh;display: flex;flex-wrap: nowrap; align-items: center; position: fixed; top: 0; left: 0;margin-left: 25%;}
 .project{width: 100vw; height: 100vh; padding-top: 5em;}
