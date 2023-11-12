@@ -1,5 +1,5 @@
 @charset "utf-8";
-header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em; z-index: 10;}
+header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em; z-index: 500;}
 .header-wrap{position: relative; width: 100%; height: var(--header-size); display: flex; align-items: center; justify-content: space-between; border-top: 2px solid #333; border-bottom: 2px solid #333;}
 .gnb{display: flex;}
 .gnb >li{}
@@ -11,16 +11,17 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .layout{padding-top: 80px; padding-bottom: 80px;}
 
 #section1{position: relative; z-index: 200; background: #fff; min-height: 100vh;}
-.headline{text-align: center; border-bottom: 1px solid #333; position: relative; overflow: hidden; height: 300px;}
+.headline{text-align: center; border-bottom: 1px solid #333; position: relative; overflow: hidden; height: 500px;}
 .headline p{font-size: 6vw; font-weight: 900; color: #333; letter-spacing: 3px; white-space: nowrap; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)}
 .intro{padding-top: 3em; padding-bottom: 3em; display: flex; flex-wrap: wrap; align-items: center;}
-.intro .img{width: 500px;}
+.intro .img{width: 500px; margin-right: 2.5em;}
 
 .intro .cont{width: 100%; flex: 1;}
 .intro .tit{font-weight: 700; font-size: 30px; font-size: 1.875em; margin-bottom: 1em; color: #333;}
 .intro .desc{word-break: keep-all;}
 
 .main-tit{font-size: 40px; font-size: 2.5em; font-weight: 900; color: #333; margin-bottom: 0.5em;}
+.main-tit >span{box-shadow: 0 -25px var(--yellow) inset}
 
 #section2{position: relative; z-index: 200; background: #fff; min-height: 100vh; transition: background .3s ease-in-out;}
 #section2.on{background: transparent;}
@@ -46,9 +47,9 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .fade-g > *{opacity:0; transform: translateY(1.35rem); transition: all cubic-bezier(.215,.61,.355,1) .85s;; transition-delay: .1s;}
 .fade-g.on > *.on{transform: translateY(0); opacity: 1;}
 
-#section3{width: 100%; height: 1400vh; z-index: 100;}
-#section3 .in{width: 700%; height: 100vh; margin-left: 5%; position: fixed; left: 0; top: 200px;}
-.project-wrap{width: 700%;height: 100vh;display: flex;flex-wrap: nowrap; align-items: center; position: fixed; top: 0; left: 0;margin-left: 25%;}
+#section3{width: 100%; height: 2100vh; z-index: 100;}
+#section3 .in{width: 1000%; height: 100vh; margin-left: 5%; position: fixed; left: 0; top: 200px;}
+.project-wrap{width: 1000%;height: 100vh;display: flex;flex-wrap: nowrap; align-items: center; position: fixed; top: 0; left: 0;margin-left: 25%;}
 .project{width: 100vw; height: 100vh; padding-top: 5em;}
 .prj-wrap{display: flex;align-items: center;width: 100%;height: 100%;padding-left: 15%;}
 .prj-cont{width: 400px;padding-right: 2.5em;}
@@ -59,7 +60,42 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .prj-cont .desc >li:not(:last-child){margin-bottom: 10px;}
 .prj-cont .desc .t1{font-size: 22px; font-size: 1.375em; font-weight: 600; color: #333; margin-bottom: 5px;}
 .prj-cont .desc .t2{}
-.prj-cont .btn-view{display: block; width: 200px; line-height: 50px; text-align: center; border: 1px solid #666; margin-top: 50px;}
+.prj-cont .btn-view{display: block; width: 200px; line-height: 50px; text-align: center; border: 1px solid #666; margin-top: 50px; font-weight: 700; transition: .3s all ease-in-out;}
+.prj-cont .btn-view:hover{background: #333; color: #fff;}
 .prj-pic{width: 100%;flex: 1;box-shadow: 0 0 20px rgba(0, 0, 0, .3)}
+.prj-pic >img{width: 100%;}
 
 #section4{position: relative; z-index: 200; background: #333; height: 100vh;}
+
+@media (max-width : 1200px){
+  .headline p{font-size: 10vw;}
+}
+@media (max-width : 1024px){
+  .intro .img{width: 100%;text-align: center;margin-bottom: 2.5em;}
+  
+}
+@media (max-width : 768px){
+  #section1,
+  #section2{min-height: auto;}
+
+  .headline{height: 300px;}
+  
+  #section3{height: 100%;}
+  #section3 .in{width: 100%; height: 100%; position: static; margin-left: 0; padding-bottom: 80px;}
+  .project-wrap{width: 100%; height: 100%; position: static; flex-direction: column; margin-left: 0;;}
+  .project{width: 100%; height: 100%;}
+  .prj-wrap{padding: 0 2.5em; flex-direction: column;}
+  .prj-cont{order: 2; width: 100%; margin-top: 2.5em; padding-right: 0;}
+  .prj-pic{order: 1;}
+  .prj-cont .btn-view{width: 100%;}
+  
+}
+@media (max-width : 480px){
+  .gnb >li >a{min-width: auto; font-size: 1em;}
+
+  .skill-list .item .ico{width: 110px;}
+  
+}
+@media (max-width : 350px){
+  
+}

@@ -2,6 +2,7 @@
 @import url('/css/font/NanumSquareNeo/NanumSquareNeo.css');
 :root{
 	--header-size: 4em;
+	--yellow: #fed126;
 }
 *{margin: 0; padding: 0; box-sizing: border-box; text-underline-position: under; letter-spacing: -0.03em; font-family: 'NanumSquareNeo'; color: #666;}
 a{text-decoration: none; color: inherit; font-family: inherit;}
@@ -9,8 +10,8 @@ a{text-decoration: none; color: inherit; font-family: inherit;}
 ul, li, ol{list-style: none;}
 body{font-family: 'KOHINanum'; line-height: 1.5;}
 h1, h2, h3, h4, h5, h6{font-size: 1em; font-weight: inherit;}
-span{display: inline-block;}
-strong{display: inline-block; font-weight: 600;}
+span{display: inline-block; font-size: inherit; font-weight: inherit; color: inherit;}
+strong{display: inline-block; font-weight: 600; font-size: inherit; color: inherit;}
 img{max-width: 100%;vertical-align: middle;}
 .hide,caption,legend{position:absolute !important; left:-300px; width:0 !important; height:0 !important; margin:0 !important; padding:0 !important; background:none; line-height:0; overflow: hidden}
 .accessibilityWrap a{display:block; position:absolute; top:-10000px; left:0; z-index:500; width:100%; font-size:1.3em; text-align:center}
