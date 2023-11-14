@@ -5,10 +5,13 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .gnb >li{}
 .gnb >li >a{display: block;font-size: 18px;font-size: 1.125em;font-weight: 700;min-width: 100px;text-align: center;text-transform: uppercase;transition: .3s all ease-in-out; color: #333; padding: 0 10px;}
 .gnb .active a{color: #fff;font-weight: 900;text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;letter-spacing: 2px;}
-
+.sec4 header{background: #333;}
+.sec4 .header-wrap{border-color: #fff;}
+.sec4 .gnb >li >a{color: #fff;}
+.sec4 .gnb .active a{color: #333; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;}
 
 .section{width: 100%;}
-.layout{padding-top: 80px; padding-bottom: 80px;}
+.layout{padding-top: 100px; padding-bottom: 80px;}
 
 #section1{position: relative; z-index: 200; background: #fff; min-height: 100vh;}
 .headline{text-align: center; border-bottom: 1px solid #333; position: relative; overflow: hidden; height: 500px;}
@@ -21,7 +24,7 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .intro .desc{word-break: keep-all;}
 
 .main-tit{font-size: 40px; font-size: 2.5em; font-weight: 900; color: #333; margin-bottom: 0.5em;}
-.main-tit >span{box-shadow: 0 -25px var(--yellow) inset}
+.main-tit >span{box-shadow: inset 0 -0.4em 0 var(--yellow);line-height: 1.2;}
 
 #section2{position: relative; z-index: 200; background: #fff; min-height: 100vh; transition: background .3s ease-in-out;}
 #section2.on{background: transparent;}
@@ -66,6 +69,11 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .prj-pic >img{width: 100%;}
 
 #section4{position: relative; z-index: 200; background: #333; height: 100vh;}
+.contact{text-align: center;display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;flex-direction: column;}
+.contact .title{font-size: 50px; font-weight: 900; color: var(--yellow); margin-top: 50px; margin-bottom: 50px;}
+.contact .t1{color: #fff; font-size: 25px; font-size: 1.563em; font-weight: 700;}
+.contact .mail{display: block; color: #fff; font-weight: 900; font-size: 40px; font-size: 2.5em; margin: 0.5em 0;}
+.contact .t2{color: #fff;}
 
 @media (max-width : 1200px){
   .headline p{font-size: 10vw;}
@@ -87,7 +95,7 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
   .prj-wrap{padding: 0 2.5em; flex-direction: column;}
   .prj-cont{order: 2; width: 100%; margin-top: 2.5em; padding-right: 0;}
   .prj-pic{order: 1;}
-  .prj-cont .btn-view{width: 100%;}
+  .prj-cont .btn-view{width: 100%; margin-top: 30px;}
   
 }
 @media (max-width : 480px){

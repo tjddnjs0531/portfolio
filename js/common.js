@@ -44,7 +44,7 @@ $(window).scroll(function(){
 	$(section).each(function (index){
 		var $target   = $(section).eq(index),
 		i         = $target.index(),
-		targetTop = $target.offset().top;
+		targetTop = $target.offset().top - 100;
 		if (targetTop <= scltop) {
 			n = i - 1;
 			$('body').removeClass();
