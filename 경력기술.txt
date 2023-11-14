@@ -1,0 +1,41 @@
+공동체주택(2021-12 ~ 2022-04)
+- CMS 기반 홈페이지 구축 및 웹접근성 획득
+https://soco.seoul.go.kr/coHouse/main/main.do
+
+인제백병원(2022-1 ~ 2022-06)
+- CMS 기반 홈페이지 구축
+https://www.paik.ac.kr/paik/user/main/view.do
+
+서울미래유산 웹접근성
+
+강남구청(2022-08~2022-08)
+- 반응형 웹 리뉴얼 및 웹접근성 프로젝트 (참여도 100%)
+https://www.gangnam.go.kr/main.do
+
+강남구청동주민센터(2022-12 ~ 2022-12)
+- 반응형 웹 리뉴얼
+https://www.gangnam.go.kr/center/main.do?office=3220049
+
+손기정박물관 (2022-10 ~ 2023-1)
+- CMS 기반 홈페이지 구축 및 웹접근성 획득
+https://www.sonkeechung.com/sonkeechung/main/main.do
+
+부평구문화재단
+- CMS 기반 홈페이지 구축
+https://www.bpcf.or.kr/bpcf/main/main.do
+
+경희대학교
+*경영대학원
+https://com.khu.ac.kr/khmba_kor/user/main/view.do
+*공동기기원 (2022-06)
+https://crf.khu.ac.kr/main/index.php
+
+국립생태원 10주년 마이크로사이트 (2023-09~2023-09)
+
+세종문화회관
+- 2023 세종 올패스
+https://www.sejongpac.or.kr/portal/subMain/allPassFirst2023.do
+- 2022 세종 여름시즌
+https://season.sejongpac.or.kr/portal/season/main_2022.do
+- 2022 봄 대극장 올패스
+https://www.sejongpac.or.kr/portal/subMain/allPassFirst2022.do
