@@ -66,7 +66,7 @@ $(window).bind('scroll load orientationchange reload resize ready', function() {
 			$(this).find("> *").each(function(i){
 				$(this).delay(i*150).queue(function(){
 					$(this).addClass("on").dequeue();
-				}); //('transition-delay', '.' + (i*18) + 's');
+				}); 
 			 });
 		}else{
 			$(this).removeClass("on");
@@ -86,12 +86,12 @@ $(window).bind('scroll load orientationchange reload resize ready', function() {
 
 $(window).scroll(function(){
     const scr = $(document).scrollTop();
-    let pub_h = $("#section3").offset().top;
+    let sec3_t = $("#section3").offset().top;
 
     //가로 스크롤_section3
-    let offset = scr - pub_h
+    let offset = scr - sec3_t
 
-    if (scr > pub_h) {
+    if (scr > sec3_t) {
         $("#section3 .project-wrap").css({ left: -offset });
     }
 });

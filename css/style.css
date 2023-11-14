@@ -4,8 +4,11 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .gnb{display: flex;}
 .gnb >li{}
 .gnb >li >a{display: block;font-size: 18px;font-size: 1.125em;font-weight: 700;min-width: 100px;text-align: center;text-transform: uppercase;transition: .3s all ease-in-out; color: #333; padding: 0 10px;}
+.gnb >li >a span{position: relative; display: inline-block;}
+.gnb >li >a span::before{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 3px; background: var(--yellow); transition: all .3s ease-in-out;}
+.gnb >li >a:hover span::before{width: 100%; left: 0;}
 .gnb .active a{color: #fff;font-weight: 900;text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;letter-spacing: 2px;}
-.sec4 header{background: #333;}
+.sec4 header{background: transparent;}
 .sec4 .header-wrap{border-color: #fff;}
 .sec4 .gnb >li >a{color: #fff;}
 .sec4 .gnb .active a{color: #333; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;}
@@ -23,7 +26,7 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .intro .tit{font-weight: 700; font-size: 30px; font-size: 1.875em; margin-bottom: 1em; color: #333;}
 .intro .desc{word-break: keep-all;}
 
-.main-tit{font-size: 40px; font-size: 2.5em; font-weight: 900; color: #333; margin-bottom: 0.5em;}
+.main-tit{font-size: 40px; font-size: 2.5em; font-weight: 900; color: #333; margin-bottom: 1em;}
 .main-tit >span{box-shadow: inset 0 -0.4em 0 var(--yellow);line-height: 1.2;}
 
 #section2{position: relative; z-index: 200; background: #fff; min-height: 100vh; transition: background .3s ease-in-out;}
@@ -68,11 +71,13 @@ header{position: sticky; top: 0; width: 100%; background: #fff; padding-top: 1em
 .prj-pic{width: 100%;flex: 1;box-shadow: 0 0 20px rgba(0, 0, 0, .3)}
 .prj-pic >img{width: 100%;}
 
-#section4{position: relative; z-index: 200; background: #333; height: 100vh;}
+#section4{position: relative; z-index: 200; background: linear-gradient(45deg, #000, #333); height: 100vh;}
 .contact{text-align: center;display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;flex-direction: column;}
 .contact .title{font-size: 50px; font-weight: 900; color: var(--yellow); margin-top: 50px; margin-bottom: 50px;}
 .contact .t1{color: #fff; font-size: 25px; font-size: 1.563em; font-weight: 700;}
-.contact .mail{display: block; color: #fff; font-weight: 900; font-size: 40px; font-size: 2.5em; margin: 0.5em 0;}
+.contact .mail{display: block; color: #fff; font-weight: 900; font-size: 40px; font-size: 2.5em; margin: 0.5em 0; transition: all .3s ease-in-out;;}
+.contact .mail::before{content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 3px; background: var(--yellow); transition: all .3s ease-in-out;}
+.contact .mail:hover::before{width: 100%; left: 0;}
 .contact .t2{color: #fff;}
 
 @media (max-width : 1200px){
