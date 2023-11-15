@@ -7,7 +7,7 @@ $(section).each(function(i){
 	sectionArray[i] = $(this).offset().top;
 });
 
-function scrollAnimateExec(moveTop) {
+const scrollAnimateExec = (moveTop) => {
 	$("html,body").stop().animate({ scrollTop: moveTop + 'px'}, 800,"easeInOutCubic");
 }
 
