@@ -1,31 +1,29 @@
 
-var	isPC = $(window).width() > 1024;
-var scrollEvent = false;
-var elm = "#section3 .project";
-var section = ".section";
-var sectionArray = new Array;
-var sectionCount = 0;
+let section = ".section";
+let sectionArray = new Array;
+let sectionCount = 0;
 
 $(section).each(function(i){
 	sectionArray[i] = $(this).offset().top;
 });
 
+function scrollAnimateExec(moveTop) {
+	$("html,body").stop().animate({ scrollTop: moveTop + 'px'}, 800,"easeInOutCubic");
+}
+
 $('.gnb a').on('click', function(){
-	var menu_chk = $(this).attr('href');
+	let menu_chk = $(this).attr('href');
 	sectionCount = menu_chk.replace('#section', '');
 	
 	// page move
 	scrollAnimateExec( sectionArray[ sectionCount ] );
 });
 
-$(window).on('resize', function(){
-	isPC = $(window).width() > 1024;
-});
 
 $(window).on('load resize', function (){
-	var scltop = $(window).scrollTop();
+	let scltop = $(window).scrollTop();
 	$(section).each(function (index){
-		var $target   = $(section).eq(index),
+		let $target   = $(section).eq(index),
 		i         = $target.index(),
 		targetTop = $target.offset().top;
 		if (targetTop <= scltop) {
@@ -40,9 +38,9 @@ $(window).on('load resize', function (){
 
 $(window).scroll(function(){
 	//manu navigation
-	var scltop = $(window).scrollTop();
+	let scltop = $(window).scrollTop();
 	$(section).each(function (index){
-		var $target   = $(section).eq(index),
+		let $target   = $(section).eq(index),
 		i         = $target.index(),
 		targetTop = $target.offset().top - 100;
 		if (targetTop <= scltop) {
@@ -56,9 +54,9 @@ $(window).scroll(function(){
 	
 });
 
-
+// fade up effect
 $(window).bind('scroll load orientationchange reload resize ready', function() {
-	var win = $(window).scrollTop() + $(window).height();
+	let win = $(window).scrollTop() + $(window).height();
 
 	$('.fade-g').each(function(){
 		if(win > $(this).offset().top ){
@@ -75,7 +73,9 @@ $(window).bind('scroll load orientationchange reload resize ready', function() {
 			});
 		}
 	})
-	var sec2_t = $('#section2').offset().top + $('#section2').height() + 200;
+
+	//section2
+	let sec2_t = $('#section2').offset().top + $('#section2').height() + 200;
 	if(win > sec2_t ){
 		$('#section2').addClass("on");
 	}else{
@@ -85,10 +85,10 @@ $(window).bind('scroll load orientationchange reload resize ready', function() {
 
 
 $(window).scroll(function(){
-    const scr = $(document).scrollTop();
+    let scr = $(document).scrollTop();
     let sec3_t = $("#section3").offset().top;
 
-    //가로 스크롤_section3
+    //section3 horizontal scroll
     let offset = scr - sec3_t
 
     if (scr > sec3_t) {
